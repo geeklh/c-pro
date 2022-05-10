@@ -1,7 +1,10 @@
 #include <iostream>
 #include <string>
+#include <map>
+#include <stdlib.h>
+#include <typeinfo>
 
-using namespace std;
+using namespace std; // 命名空间
 
 //多态指的是调用同一个接口，表现处不同的特性，分为静态多态和动态多态
 //静态多态指的是编译期间就能确定其特性的多态，动态多态是在运行时确定其特性
@@ -123,7 +126,7 @@ public:
         A = a;
         B = b;
     }
-    void exerungame()
+    void exerungame() //重写虚函数
     {
         cout << "A= " << A << ", B= " << B << endl;
     }
@@ -138,7 +141,7 @@ public:
     }
 
 public:
-    Basicrun3 *m_b;
+    Basicrun3 *m_b; // 声明一个公共指针ss
 };
 
 void test03()
@@ -147,7 +150,64 @@ void test03()
     actGame act = actGame(bs); // 父类指针指向子类的对象  传参
     act.m_b->exerungame();
 }
+//综合应用
+//初始化CPU类
+class BasicCpu
+{
+public:
+    virtual void calcuate() = 0;
+};
 
+class interCpu: public BasicCpu
+{
+    virtual void calcuate()
+    {
+        cout << "intercpu 开始工作：" << endl;
+    }
+};
+
+class amdCpu: public BasicCpu
+{
+    virtual void calcuate()
+    {
+        cout << "amdcpu 开始工作：" << endl;
+    }
+};
+
+//初始化内存类
+class BasicMemory
+{
+    virtual void strong() = 0;
+};
+class interMemory: public BasicMemory
+{
+public:
+    virtual void strong()
+    {
+        cout << "inter 内存类开始工作***" << endl;
+    }
+};
+class amdMemory: public BasicMemory
+{
+    virtual void strong()
+    {
+        cout << "amd 内存类开始工作*** " << endl;
+    }
+};
+
+class vCard
+{
+public:
+    virtual void show() = 0;
+};
+class interVCard: public vCard
+{
+public:
+    virtual void show()
+    {
+        cout << "inter vcardL类 开始工作：" << endl;
+    }
+};
 int main() {
 //    test01();
 //    test02();
