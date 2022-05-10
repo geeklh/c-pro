@@ -177,6 +177,7 @@ class amdCpu: public BasicCpu
 //初始化内存类
 class BasicMemory
 {
+public:
     virtual void strong() = 0;
 };
 class interMemory: public BasicMemory
@@ -208,10 +209,71 @@ public:
         cout << "inter vcardL类 开始工作：" << endl;
     }
 };
+class amdVCard: public vCard
+{
+public:
+    virtual void show()
+    {
+        cout << "amd card类 开始工作： " << endl;
+    }
+};
+
+class computer
+{
+public:
+    computer( BasicCpu *c, BasicMemory *m, vCard *v, string com_name)
+    {
+        bcpu = c;
+        bmemory = m;
+        vcard = v;
+        this->com_name = com_name;
+    }
+    void comWork()
+    {
+        cout << com_name << "启动***" << endl;
+        bcpu->calcuate();
+        bmemory->strong();
+        vcard->show();
+    }
+    void mountWork(BasicCpu *c1, BasicMemory *m1, vCard *v1)
+    {
+        cout << com_name << "程序启动进行加载" << endl;
+        c1->calcuate();
+        m1->strong();
+        v1->show();
+    }
+public:
+    BasicCpu *bcpu;
+    BasicMemory *bmemory;
+    vCard *vcard;
+    string com_name;
+};
+//测试方法
+void test04()
+{
+    interVCard *ic = new interVCard();
+    amdVCard *ac = new amdVCard();
+    interMemory *im = new interMemory();
+    amdMemory *am = new amdMemory();
+    interCpu *iu = new interCpu();
+    amdCpu *au = new amdCpu();
+    computer acomputer = computer(au, im, ic, "A机器");
+    acomputer.comWork();
+    cout << "=====================" << endl;
+    computer bcomputer = computer(iu, im, ac, "B机器");
+    bcomputer.comWork();
+    cout << "=====================" << endl;
+    computer ccomputer = computer(iu, im, ic, "C机器");
+    ccomputer.comWork();
+    cout << "=====================" << endl;
+    computer dcomputer = computer(au, am, ac, "D机器");
+    dcomputer.comWork();
+}
 int main() {
 //    test01();
 //    test02();
-    test03();
+//    test03();
+    test04();
     cout << "Hello, World!" << endl;
     return 0;
 }
