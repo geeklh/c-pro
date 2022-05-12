@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/liheng/project/c++/cppdemo/cmake-build-debug"/>
+				<Option working_dir="/Users/liheng/project/c++/c-pro/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/liheng/project/c++/cppdemo/cmake-build-debug"/>
+				<Option working_dir="/Users/liheng/project/c++/c-pro/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/liheng/project/c++/cppdemo/cmake-build-debug"/>
+				<Option working_dir="/Users/liheng/project/c++/c-pro/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cppdemo">
-				<Option output="/Users/liheng/project/c++/cppdemo/cmake-build-debug/cppdemo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/liheng/project/c++/cppdemo/cmake-build-debug"/>
+				<Option output="/Users/liheng/project/c++/c-pro/cmake-build-debug/cppdemo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/project/c++/c-pro/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 cppdemo"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 cppdemo"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cppdemo/fast">
-				<Option output="/Users/liheng/project/c++/cppdemo/cmake-build-debug/cppdemo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/liheng/project/c++/cppdemo/cmake-build-debug"/>
+				<Option output="/Users/liheng/project/c++/c-pro/cmake-build-debug/cppdemo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liheng/project/c++/c-pro/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,17 +73,17 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 cppdemo/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/cppdemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 cppdemo/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/liheng/project/c++/c-pro/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/liheng/project/c++/cppdemo/main.cpp">
+		<Unit filename="/Users/liheng/project/c++/c-pro/main.cpp">
 			<Option target="cppdemo"/>
 		</Unit>
-		<Unit filename="/Users/liheng/project/c++/cppdemo/CMakeLists.txt">
+		<Unit filename="/Users/liheng/project/c++/c-pro/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
