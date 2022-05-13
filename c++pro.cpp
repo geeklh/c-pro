@@ -177,9 +177,120 @@ void useformfactory() { // 调用工厂方法的实例
         formproductb = NULL;
     }
 }
+
+//抽象工厂模式 就是工厂模式的扩展和延伸，但是更加具有一般性和代表性，
+//工厂方法模式适用于产品种类结构单一的场合，为一类产品提供创建的接口；
+//而抽象工厂方法适用于产品种类结构多的场合，主要用于创建一组（有多个种类）相关的产品，为它们提供创建的接口；
+//就是当具有多个抽象角色时，抽象工厂便可以派上用场。
+
+class abstractProductA {
+public:
+    virtual void absShow() = 0; //虚函数
+};
+
+class absProductA1 :public abstractProductA {
+public:
+    void absShow() {
+        cout << "I'm ProductA1" << endl;
+    }
+};
+
+class absProductA2 :public abstractProductA {
+public:
+    void absShow() { //重写虚函数
+        cout << "I'm ProductA2" << endl;
+    }
+};
+
+class abstractProductB {
+public:
+    virtual void absShow() = 0; //虚函数
+};
+
+class absProductB1 :public abstractProductB {
+public:
+    void absShow() {
+        cout << "I'm ProductB1" << endl;
+    }
+};
+
+class absProductB2 :public abstractProductB {
+public:
+    void absShow() {
+        cout << "I'm ProductB2" << endl;
+    }
+};
+
+class abstractFactory {
+public:
+    virtual abstractProductA* CreateAbsProductA() = 0;
+    virtual abstractProductB* CreateAbsProductB() = 0;
+};
+
+class abstractFactory1 :public abstractFactory {
+public:
+    abstractProductA* CreateAbsProductA() { //重写函数
+        return new absProductA1();
+    }
+
+    abstractProductB* CreateAbsProductB() {
+        return new absProductB1();
+    }
+};
+
+class abstractFactory2 :public abstractFactory {
+public:
+    abstractProductA* CreateAbsProductA() { //重写函数
+        return new absProductA2();
+    }
+
+    abstractProductB* CreateAbsProductB() {
+        return new absProductB2();
+    }
+};
+
 int main()
 {
-    
+
+    abstractFactory* absfactoryObj1 = new abstractFactory1();
+    abstractProductA* absproductObjA1 = absfactoryObj1->CreateAbsProductA();
+    abstractProductB* absproductObjB1 = absfactoryObj1->CreateAbsProductB();
+
+    absproductObjA1->absShow();
+    absproductObjB1->absShow();
+
+    abstractFactory* absfactoryObj2 = new abstractFactory2(); //实例避免复用，产生脏数据
+    abstractProductA* absproductObjA2 = absfactoryObj2->CreateAbsProductA();
+    abstractProductB* absproductObjB2 = absfactoryObj2->CreateAbsProductB();
+
+    absproductObjA2->absShow();
+    absproductObjB2->absShow();
+
+    if (absfactoryObj1) {
+        delete absfactoryObj1;
+        absfactoryObj1 = NULL;
+    }
+    if (absproductObjA1) {
+        delete absproductObjA1;
+        absproductObjA1 = NULL;
+    }
+    if (absproductObjB1) {
+        delete absproductObjB1;
+        absproductObjB1 = NULL;
+    }
+    if (absfactoryObj2) {
+        delete absfactoryObj2;
+        absfactoryObj2 = NULL;
+    }
+    if (absproductObjA2) {
+        delete absproductObjA2;
+        absproductObjA2 = NULL;
+    }
+    if (absproductObjB2) {
+        delete absproductObjB2;
+        absproductObjB2 = NULL;
+    }
+
 
     cout << "Hello World!\n";
 }
