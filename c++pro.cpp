@@ -248,9 +248,8 @@ public:
         return new absProductB2();
     }
 };
+void abstrctfactoryform(){ //抽象工厂模式的调用实例
 
-int main()
-{
 
     abstractFactory* absfactoryObj1 = new abstractFactory1();
     abstractProductA* absproductObjA1 = absfactoryObj1->CreateAbsProductA();
@@ -290,7 +289,9 @@ int main()
         delete absproductObjB2;
         absproductObjB2 = NULL;
     }
-
-
+}
+int main()
+{
+    
     cout << "Hello World!\n";
 }
