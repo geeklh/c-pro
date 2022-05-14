@@ -114,9 +114,6 @@ void simplesingleform() {
 }
 
 int main() {
-    Singleton3 *singleton3obj = Singleton3::GetInstance();
-    cout << singleton3obj->Gettest() << endl;
-    Singleton3::DestoryInstance();
     cout << "Hello, World!" << endl;
     return 0;
 }
