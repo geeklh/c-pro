@@ -83,7 +83,7 @@ void Singleton2form() { //使用案例
     Singleton2::DestoryInstance();
 }
 
-//单例实例3
+//单例实例3 参考大数据处理模式
 class Singleton3 {
 private:
     int m_test;
